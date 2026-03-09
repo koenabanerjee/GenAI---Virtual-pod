@@ -1,0 +1,68 @@
+{
+  "run_id": "20260309_144845_mock_allowed_check",
+  "project_name": "mock-allowed-check",
+  "requirements": "build weather app",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "build weather app",
+      "persona": "Project Lead",
+      "goal": "build weather app",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "build_weather_app",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\development\\generated_app\\build_weather_app.py",
+      "summary": "build weather app"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_build_weather_app",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\testing\\tests\\test_build_weather_app.py",
+      "coverage_focus": "build weather app"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "...                                                                      [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475\n  C:\\Users\\Koena\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475: PytestCacheWarning: could not create cache path C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] Access is denied: 'C:\\\\Users\\\\Koena\\\\OneDrive\\\\Desktop\\\\GenAI\\\\artifacts\\\\20260309_144845_mock_allowed_check\\\\pytest-cache-files-d22djj7a'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 0.05s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "governance": "completed"
+  },
+  "pm_summary": "Project: mock-allowed-check\nRun ID: 20260309_144845_mock_allowed_check\nStage status:\n- analysis: completed\n- development: completed\n- testing: completed\n- governance: completed\nUser stories: 1\nCode modules: 1\nTest files: 1\nTest results: passed=3, failed=0, skipped=0\nLLM: provider=mock, model=mock, mock=True\nArtifacts dir: C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "mock",
+  "llm_model_id": "mock",
+  "llm_is_mock": true,
+  "llm_reason": "Mock provider explicitly configured.",
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\development\\generated_app\\build_weather_app.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\testing\\tests\\test_build_weather_app.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\reports\\bug_summary.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\reports\\pm_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_144845_mock_allowed_check\\run_metadata.json"
+}

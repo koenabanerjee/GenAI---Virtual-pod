@@ -1,0 +1,172 @@
+{
+  "run_id": "20260309_140944_demo2",
+  "project_name": "demo2",
+  "requirements": "# Business Requirements\n\nThe organization needs an AI-powered Virtual Development Pod that automates the full SDLC.\n\n- The system should convert high-level requirements into structured user stories and acceptance criteria.\n- It should generate Python implementation modules using enterprise coding templates.\n- It should auto-create unit and integration tests, execute them, and produce detailed reports.\n- Project leadership should be able to query progress and artifact quality through a chatbot interface.\n- All artifacts should be stored and searchable through vector memory for retrieval and reuse.",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "The organization needs an AI-powered Virtual Development Pod that automates the full...",
+      "persona": "Project Lead",
+      "goal": "The organization needs an AI-powered Virtual Development Pod that automates the full SDLC.",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    },
+    {
+      "story_id": "US-002",
+      "title": "The system should convert high-level requirements into structured user stories and acceptance...",
+      "persona": "Project Lead",
+      "goal": "The system should convert high-level requirements into structured user stories and acceptance criteria.",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "Medium"
+    },
+    {
+      "story_id": "US-003",
+      "title": "It should generate Python implementation modules using enterprise coding templates.",
+      "persona": "Project Lead",
+      "goal": "It should generate Python implementation modules using enterprise coding templates.",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "Medium"
+    },
+    {
+      "story_id": "US-004",
+      "title": "It should auto-create unit and integration tests, execute them, and produce detailed...",
+      "persona": "Project Lead",
+      "goal": "It should auto-create unit and integration tests, execute them, and produce detailed reports.",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "Medium"
+    },
+    {
+      "story_id": "US-005",
+      "title": "Project leadership should be able to query progress and artifact quality through...",
+      "persona": "Project Lead",
+      "goal": "Project leadership should be able to query progress and artifact quality through a chatbot interface.",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "the_organization_needs_an_ai_powered_virtual_development_pod_tha",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\the_organization_needs_an_ai_powered_virtual_development_pod_tha.py",
+      "summary": "The organization needs an AI-powered Virtual Development Pod that automates the full SDLC."
+    },
+    {
+      "story_id": "US-002",
+      "module_name": "the_system_should_convert_high_level_requirements_into_structure",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\the_system_should_convert_high_level_requirements_into_structure.py",
+      "summary": "The system should convert high-level requirements into structured user stories and acceptance criteria."
+    },
+    {
+      "story_id": "US-003",
+      "module_name": "it_should_generate_python_implementation_modules_using_enterpris",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\it_should_generate_python_implementation_modules_using_enterpris.py",
+      "summary": "It should generate Python implementation modules using enterprise coding templates."
+    },
+    {
+      "story_id": "US-004",
+      "module_name": "it_should_auto_create_unit_and_integration_tests_execute_them_an",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\it_should_auto_create_unit_and_integration_tests_execute_them_an.py",
+      "summary": "It should auto-create unit and integration tests, execute them, and produce detailed reports."
+    },
+    {
+      "story_id": "US-005",
+      "module_name": "project_leadership_should_be_able_to_query_progress_and_artifact",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\project_leadership_should_be_able_to_query_progress_and_artifact.py",
+      "summary": "Project leadership should be able to query progress and artifact quality through a chatbot interface."
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_the_organization_needs_an_ai_powered_virtual_development_pod_tha",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_the_organization_needs_an_ai_powered_virtual_development_pod_tha.py",
+      "coverage_focus": "The organization needs an AI-powered Virtual Development Pod that automates the full SDLC."
+    },
+    {
+      "story_id": "US-002",
+      "test_name": "test_the_system_should_convert_high_level_requirements_into_structure",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_the_system_should_convert_high_level_requirements_into_structure.py",
+      "coverage_focus": "The system should convert high-level requirements into structured user stories and acceptance criteria."
+    },
+    {
+      "story_id": "US-003",
+      "test_name": "test_it_should_generate_python_implementation_modules_using_enterpris",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_it_should_generate_python_implementation_modules_using_enterpris.py",
+      "coverage_focus": "It should generate Python implementation modules using enterprise coding templates."
+    },
+    {
+      "story_id": "US-004",
+      "test_name": "test_it_should_auto_create_unit_and_integration_tests_execute_them_an",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_it_should_auto_create_unit_and_integration_tests_execute_them_an.py",
+      "coverage_focus": "It should auto-create unit and integration tests, execute them, and produce detailed reports."
+    },
+    {
+      "story_id": "US-005",
+      "test_name": "test_project_leadership_should_be_able_to_query_progress_and_artifact",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_project_leadership_should_be_able_to_query_progress_and_artifact.py",
+      "coverage_focus": "Project leadership should be able to query progress and artifact quality through a chatbot interface."
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 11,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "PASS test_integration_generated_app.py::test_generated_app_integration\nPASS test_it_should_auto_create_unit_and_integration_tests_execute_them_an.py::test_module_imports\nPASS test_it_should_auto_create_unit_and_integration_tests_execute_them_an.py::test_module_wrapper_returns_dict\nPASS test_it_should_generate_python_implementation_modules_using_enterpris.py::test_module_imports\nPASS test_it_should_generate_python_implementation_modules_using_enterpris.py::test_module_wrapper_returns_dict\nPASS test_project_leadership_should_be_able_to_query_progress_and_artifact.py::test_module_imports\nPASS test_project_leadership_should_be_able_to_query_progress_and_artifact.py::test_module_wrapper_returns_dict\nPASS test_the_organization_needs_an_ai_powered_virtual_development_pod_tha.py::test_module_imports\nPASS test_the_organization_needs_an_ai_powered_virtual_development_pod_tha.py::test_module_wrapper_returns_dict\nPASS test_the_system_should_convert_high_level_requirements_into_structure.py::test_module_imports\nPASS test_the_system_should_convert_high_level_requirements_into_structure.py::test_module_wrapper_returns_dict\nsummary: 11 passed, 0 failed (builtin-test-runner)",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "governance": "completed"
+  },
+  "pm_summary": "Project: demo2\nRun ID: 20260309_140944_demo2\nStage status:\n- analysis: completed\n- development: completed\n- testing: completed\n- governance: completed\nUser stories: 5\nCode modules: 5\nTest files: 5\nTest results: passed=11, failed=0, skipped=0\nArtifacts dir: C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\the_organization_needs_an_ai_powered_virtual_development_pod_tha.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\the_system_should_convert_high_level_requirements_into_structure.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\it_should_generate_python_implementation_modules_using_enterpris.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\it_should_auto_create_unit_and_integration_tests_execute_them_an.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\development\\generated_app\\project_leadership_should_be_able_to_query_progress_and_artifact.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_the_organization_needs_an_ai_powered_virtual_development_pod_tha.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_the_system_should_convert_high_level_requirements_into_structure.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_it_should_generate_python_implementation_modules_using_enterpris.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_it_should_auto_create_unit_and_integration_tests_execute_them_an.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\testing\\tests\\test_project_leadership_should_be_able_to_query_progress_and_artifact.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\reports\\bug_summary.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\reports\\pm_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_140944_demo2\\run_metadata.json"
+}

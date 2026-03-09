@@ -1,0 +1,76 @@
+{
+  "run_id": "20260309_162110_design_agent_check",
+  "project_name": "design-agent-check",
+  "requirements": "ai based weather app with hourly updates",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "ai based weather app with hourly updates",
+      "persona": "Project Lead",
+      "goal": "ai based weather app with hourly updates",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    }
+  ],
+  "design_artifacts": [
+    {
+      "story_id": "US-001",
+      "component_name": "ai_based_weather_app_with_hourly_updates",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\design\\ai_based_weather_app_with_hourly_updates_design.md",
+      "summary": "ai based weather app with hourly updates"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "ai_based_weather_app_with_hourly_updates",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\development\\generated_app\\ai_based_weather_app_with_hourly_updates.py",
+      "summary": "ai based weather app with hourly updates"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_ai_based_weather_app_with_hourly_updates",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\testing\\tests\\test_ai_based_weather_app_with_hourly_updates.py",
+      "coverage_focus": "ai based weather app with hourly updates"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "...                                                                      [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475\n  C:\\Users\\Koena\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475: PytestCacheWarning: could not create cache path C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] Access is denied: 'C:\\\\Users\\\\Koena\\\\OneDrive\\\\Desktop\\\\GenAI\\\\artifacts\\\\20260309_162110_design_agent_check\\\\pytest-cache-files-mu7b9195'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 0.05s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "design": "completed",
+    "development": "completed",
+    "testing": "completed"
+  },
+  "pm_summary": "Reports agent removed. Use design/code/test artifacts for status insights.",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "mock",
+  "llm_model_id": "mock",
+  "llm_is_mock": true,
+  "llm_reason": "Mock provider explicitly configured.",
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\design\\ai_based_weather_app_with_hourly_updates_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\development\\generated_app\\ai_based_weather_app_with_hourly_updates.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\testing\\tests\\test_ai_based_weather_app_with_hourly_updates.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\reports\\bug_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_162110_design_agent_check\\run_metadata.json"
+}

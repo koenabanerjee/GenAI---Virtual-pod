@@ -1,0 +1,158 @@
+{
+  "run_id": "20260309_170135_resumeparser",
+  "project_name": "resumeParser",
+  "requirements": "The  Resume Parser System  should automatically extract and organize important information from resumes such as candidate name, contact details, education, skills, work experience, and certifications. The system should convert unstructured resume documents into structured data, enabling recruiters to quickly search, filter, and evaluate candidates, thereby improving the efficiency and accuracy of the recruitment process.",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "Automate resume data extraction and organization",
+      "persona": "Recruiter",
+      "goal": "To efficiently and accurately extract and organize important information from resumes",
+      "benefit": "Improve recruitment process by enabling quick search, filter, and evaluation of candidates",
+      "acceptance_criteria": [
+        "System extracts candidate name from resume",
+        "System extracts and organizes contact details",
+        "System extracts and organizes education information",
+        "System extracts and organizes skills from resumes",
+        "System extracts and organizes work experience from resumes",
+        "System extracts and organizes certifications from resumes"
+      ],
+      "priority": "High"
+    },
+    {
+      "story_id": "US-002",
+      "title": "Convert unstructured resume data into structured data",
+      "persona": "Recruiter",
+      "goal": "To convert unstructured resume data into structured data for easy search and filtering",
+      "benefit": "Improve recruitment process by enabling quick evaluation of candidates",
+      "acceptance_criteria": [
+        "System converts unstructured resume data into structured data",
+        "Structured data includes candidate name, contact details, education, skills, work experience, and certifications"
+      ],
+      "priority": "High"
+    },
+    {
+      "story_id": "US-003",
+      "title": "Enable quick search, filter, and evaluation of candidates",
+      "persona": "Recruiter",
+      "goal": "To quickly search, filter, and evaluate candidates based on extracted and organized data",
+      "benefit": "Improve recruitment process by reducing time to find and evaluate potential candidates",
+      "acceptance_criteria": [
+        "System allows recruiters to search resumes based on extracted data",
+        "System allows recruiters to filter resumes based on extracted data",
+        "System allows recruiters to evaluate candidates based on extracted data"
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "design_artifacts": [
+    {
+      "story_id": "US-001",
+      "component_name": "automate_resume_data_extraction_and_organization",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\design\\automate_resume_data_extraction_and_organization_design.md",
+      "summary": "To efficiently and accurately extract and organize important information from resumes"
+    },
+    {
+      "story_id": "US-002",
+      "component_name": "convert_unstructured_resume_data_into_structured_data",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\design\\convert_unstructured_resume_data_into_structured_data_design.md",
+      "summary": "To convert unstructured resume data into structured data for easy search and filtering"
+    },
+    {
+      "story_id": "US-003",
+      "component_name": "enable_quick_search_filter_and_evaluation_of_candidates",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\design\\enable_quick_search_filter_and_evaluation_of_candidates_design.md",
+      "summary": "To quickly search, filter, and evaluate candidates based on extracted and organized data"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "automate_resume_data_extraction_and_organization",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\development\\generated_app\\automate_resume_data_extraction_and_organization.py",
+      "summary": "To efficiently and accurately extract and organize important information from resumes"
+    },
+    {
+      "story_id": "US-002",
+      "module_name": "convert_unstructured_resume_data_into_structured_data",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\development\\generated_app\\convert_unstructured_resume_data_into_structured_data.py",
+      "summary": "To convert unstructured resume data into structured data for easy search and filtering"
+    },
+    {
+      "story_id": "US-003",
+      "module_name": "enable_quick_search_filter_and_evaluation_of_candidates",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\development\\generated_app\\enable_quick_search_filter_and_evaluation_of_candidates.py",
+      "summary": "To quickly search, filter, and evaluate candidates based on extracted and organized data"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_automate_resume_data_extraction_and_organization",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\testing\\tests\\test_automate_resume_data_extraction_and_organization.py",
+      "coverage_focus": "To efficiently and accurately extract and organize important information from resumes"
+    },
+    {
+      "story_id": "US-002",
+      "test_name": "test_convert_unstructured_resume_data_into_structured_data",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\testing\\tests\\test_convert_unstructured_resume_data_into_structured_data.py",
+      "coverage_focus": "To convert unstructured resume data into structured data for easy search and filtering"
+    },
+    {
+      "story_id": "US-003",
+      "test_name": "test_enable_quick_search_filter_and_evaluation_of_candidates",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\testing\\tests\\test_enable_quick_search_filter_and_evaluation_of_candidates.py",
+      "coverage_focus": "To quickly search, filter, and evaluate candidates based on extracted and organized data"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": ".......                                                                  [100%]\n7 passed in 0.11s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "design": "completed",
+    "development": "completed",
+    "testing": "completed"
+  },
+  "pm_summary": "Reports agent removed. Use design/code/test artifacts for status insights.",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "langchain_hf_endpoint",
+  "llm_model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "llm_is_mock": false,
+  "llm_reason": "",
+  "agent_logs": [
+    "[17:01:35] [Orchestrator] (setup) in_progress: Initialized run 20260309_170135_resumeparser. fast_mode=True, execute_tests=True, use_chromadb=False",
+    "[17:01:35] [Orchestrator] (setup) completed: Initial handoff plan prepared.",
+    "[17:01:35] [Business Analyst Agent] (analysis) in_progress: Analyzing business requirements and drafting user stories.",
+    "[17:01:57] [Business Analyst Agent] (analysis) completed: Generated 3 user stories.",
+    "[17:01:57] [Design Agent] (design) in_progress: Creating design specifications from user stories.",
+    "[17:03:14] [Design Agent] (design) completed: Generated 3 design artifacts.",
+    "[17:03:14] [Developer Agent] (development) in_progress: Generating implementation modules using design context.",
+    "[17:05:16] [Developer Agent] (development) completed: Generated 3 code modules.",
+    "[17:05:16] [Testing Agent] (testing) in_progress: Building test assets (fast-mode templates).",
+    "[17:05:21] [Testing Agent] (testing) completed: Generated 3 test modules. Executed tests: passed=7, failed=0, skipped=0."
+  ],
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\design\\automate_resume_data_extraction_and_organization_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\design\\convert_unstructured_resume_data_into_structured_data_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\design\\enable_quick_search_filter_and_evaluation_of_candidates_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\development\\generated_app\\automate_resume_data_extraction_and_organization.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\development\\generated_app\\convert_unstructured_resume_data_into_structured_data.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\development\\generated_app\\enable_quick_search_filter_and_evaluation_of_candidates.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\testing\\tests\\test_automate_resume_data_extraction_and_organization.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\testing\\tests\\test_convert_unstructured_resume_data_into_structured_data.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\testing\\tests\\test_enable_quick_search_filter_and_evaluation_of_candidates.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\reports\\bug_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_170135_resumeparser\\run_metadata.json"
+}

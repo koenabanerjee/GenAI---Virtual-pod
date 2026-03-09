@@ -1,0 +1,64 @@
+{
+  "run_id": "20260309_141133_chat_smoke",
+  "project_name": "chat-smoke",
+  "requirements": "Need BA DEV QA PM flow with reports",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "Need BA DEV QA PM flow with reports",
+      "persona": "Project Lead",
+      "goal": "Need BA DEV QA PM flow with reports",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "need_ba_dev_qa_pm_flow_with_reports",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\development\\generated_app\\need_ba_dev_qa_pm_flow_with_reports.py",
+      "summary": "Need BA DEV QA PM flow with reports"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_need_ba_dev_qa_pm_flow_with_reports",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\testing\\tests\\test_need_ba_dev_qa_pm_flow_with_reports.py",
+      "coverage_focus": "Need BA DEV QA PM flow with reports"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "PASS test_integration_generated_app.py::test_generated_app_integration\nPASS test_need_ba_dev_qa_pm_flow_with_reports.py::test_module_imports\nPASS test_need_ba_dev_qa_pm_flow_with_reports.py::test_module_wrapper_returns_dict\nsummary: 3 passed, 0 failed (builtin-test-runner)",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "governance": "completed"
+  },
+  "pm_summary": "Project: chat-smoke\nRun ID: 20260309_141133_chat_smoke\nStage status:\n- analysis: completed\n- development: completed\n- testing: completed\n- governance: completed\nUser stories: 1\nCode modules: 1\nTest files: 1\nTest results: passed=3, failed=0, skipped=0\nArtifacts dir: C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\development\\generated_app\\need_ba_dev_qa_pm_flow_with_reports.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\testing\\tests\\test_need_ba_dev_qa_pm_flow_with_reports.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\reports\\bug_summary.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\reports\\pm_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_141133_chat_smoke\\run_metadata.json"
+}

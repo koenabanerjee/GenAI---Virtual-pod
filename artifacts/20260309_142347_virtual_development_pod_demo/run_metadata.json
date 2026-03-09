@@ -1,0 +1,64 @@
+{
+  "run_id": "20260309_142347_virtual_development_pod_demo",
+  "project_name": "virtual-development-pod-demo",
+  "requirements": "Build an AI-based disease prediction system",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "Build an AI-based disease prediction system",
+      "persona": "Project Lead",
+      "goal": "Build an AI-based disease prediction system",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "build_an_ai_based_disease_prediction_system",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\development\\generated_app\\build_an_ai_based_disease_prediction_system.py",
+      "summary": "Build an AI-based disease prediction system"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_build_an_ai_based_disease_prediction_system",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\testing\\tests\\test_build_an_ai_based_disease_prediction_system.py",
+      "coverage_focus": "Build an AI-based disease prediction system"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "...                                                                      [100%]\n3 passed in 0.05s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "governance": "completed"
+  },
+  "pm_summary": "Project: virtual-development-pod-demo\nRun ID: 20260309_142347_virtual_development_pod_demo\nStage status:\n- analysis: completed\n- development: completed\n- testing: completed\n- governance: completed\nUser stories: 1\nCode modules: 1\nTest files: 1\nTest results: passed=3, failed=0, skipped=0\nArtifacts dir: C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\development\\generated_app\\build_an_ai_based_disease_prediction_system.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\testing\\tests\\test_build_an_ai_based_disease_prediction_system.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\reports\\bug_summary.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\reports\\pm_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_142347_virtual_development_pod_demo\\run_metadata.json"
+}

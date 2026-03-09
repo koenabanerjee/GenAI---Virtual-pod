@@ -1,0 +1,92 @@
+{
+  "run_id": "20260309_173809_test_project",
+  "project_name": "test-project",
+  "requirements": "Create a virtual dev pod that writes code and tests from requirements.",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "Create a virtual dev pod that writes code and tests from requirements.",
+      "persona": "Project Lead",
+      "goal": "Create a virtual dev pod that writes code and tests from requirements.",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    }
+  ],
+  "design_artifacts": [
+    {
+      "story_id": "US-001",
+      "component_name": "create_a_virtual_dev_pod_that_writes_code_and_tests_from_require",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\design\\create_a_virtual_dev_pod_that_writes_code_and_tests_from_require_design.md",
+      "summary": "Create a virtual dev pod that writes code and tests from requirements."
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "create_a_virtual_dev_pod_that_writes_code_and_tests_from_require",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\development\\generated_app\\create_a_virtual_dev_pod_that_writes_code_and_tests_from_require.py",
+      "summary": "Create a virtual dev pod that writes code and tests from requirements."
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_create_a_virtual_dev_pod_that_writes_code_and_tests_from_require",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\testing\\tests\\test_create_a_virtual_dev_pod_that_writes_code_and_tests_from_require.py",
+      "coverage_focus": "Create a virtual dev pod that writes code and tests from requirements."
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "...                                                                      [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\..\\..\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475\n  C:\\Users\\Koena\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475: PytestCacheWarning: could not create cache path C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] Access is denied: 'C:\\\\Users\\\\Koena\\\\OneDrive\\\\Desktop\\\\GenAI\\\\artifacts\\\\_test_tmp_workflow\\\\artifacts\\\\20260309_173809_test_project\\\\pytest-cache-files-umxwiiq1'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 0.11s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "design": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "management": "completed"
+  },
+  "pm_summary": "# Product Manager SDLC Summary\n\nProject: test-project\nRun ID: 20260309_173809_test_project\n\n## Stage Status\n- analysis: completed\n- design: completed\n- development: completed\n- testing: completed\n- management: in_progress\n\n## Artifact Coverage\n- User stories (BA): 1\n- Design specs: 1\n- Code modules (DEV): 1\n- Test files (QA): 1\n\n## Stage Quality and Completeness\n- Business Analyst: Good (1 stories, 1/1 with acceptance criteria)\n- Developer: Good (1 modules for 1 stories)\n- Testing: Good (1 test files, Good: 3 passed, 0 failed.)\n\n## Completeness\nIncomplete\n\n## Missing Steps\n- Stage `management` is not completed (in_progress).",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "mock",
+  "llm_model_id": "mock",
+  "llm_is_mock": true,
+  "llm_reason": "Mock provider explicitly configured.",
+  "agent_logs": [
+    "[17:38:09] [Orchestrator] (setup) in_progress: Initialized run 20260309_173809_test_project. fast_mode=False, execute_tests=True, use_chromadb=False",
+    "[17:38:09] [Orchestrator] (setup) completed: Initial handoff plan prepared.",
+    "[17:38:09] [Business Analyst Agent] (analysis) in_progress: Analyzing business requirements and drafting user stories.",
+    "[17:38:09] [Business Analyst Agent] (analysis) completed: Generated 1 user stories.",
+    "[17:38:09] [Design Agent] (design) in_progress: Creating design specifications from user stories.",
+    "[17:38:09] [Design Agent] (design) completed: Generated 1 design artifacts.",
+    "[17:38:09] [Developer Agent] (development) in_progress: Generating implementation modules using design context.",
+    "[17:38:09] [Developer Agent] (development) completed: Generated 1 code modules.",
+    "[17:38:09] [Testing Agent] (testing) in_progress: Building test assets (LLM-enhanced).",
+    "[17:38:13] [Testing Agent] (testing) completed: Generated 1 test modules. Executed tests: passed=3, failed=0, skipped=0.",
+    "[17:38:13] [Product Manager Agent] (management) in_progress: Reviewing artifacts for status, quality, and completeness.",
+    "[17:38:13] [Product Manager Agent] (management) completed: Generated PM summary and workflow gap analysis."
+  ],
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\design\\create_a_virtual_dev_pod_that_writes_code_and_tests_from_require_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\development\\generated_app\\create_a_virtual_dev_pod_that_writes_code_and_tests_from_require.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\testing\\tests\\test_create_a_virtual_dev_pod_that_writes_code_and_tests_from_require.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\reports\\bug_summary.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\reports\\product_manager_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\_test_tmp_workflow\\artifacts\\20260309_173809_test_project\\run_metadata.json"
+}

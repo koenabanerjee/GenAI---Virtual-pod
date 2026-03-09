@@ -1,0 +1,28 @@
+# Test Execution Report
+
+## Command
+`C:\Python313\python.exe <builtin-test-runner> C:\Users\Koena\OneDrive\Desktop\GenAI\artifacts\20260309_140944_demo2\testing\tests`
+
+## Return Code
+0
+
+## Stdout
+```text
+PASS test_integration_generated_app.py::test_generated_app_integration
+PASS test_it_should_auto_create_unit_and_integration_tests_execute_them_an.py::test_module_imports
+PASS test_it_should_auto_create_unit_and_integration_tests_execute_them_an.py::test_module_wrapper_returns_dict
+PASS test_it_should_generate_python_implementation_modules_using_enterpris.py::test_module_imports
+PASS test_it_should_generate_python_implementation_modules_using_enterpris.py::test_module_wrapper_returns_dict
+PASS test_project_leadership_should_be_able_to_query_progress_and_artifact.py::test_module_imports
+PASS test_project_leadership_should_be_able_to_query_progress_and_artifact.py::test_module_wrapper_returns_dict
+PASS test_the_organization_needs_an_ai_powered_virtual_development_pod_tha.py::test_module_imports
+PASS test_the_organization_needs_an_ai_powered_virtual_development_pod_tha.py::test_module_wrapper_returns_dict
+PASS test_the_system_should_convert_high_level_requirements_into_structure.py::test_module_imports
+PASS test_the_system_should_convert_high_level_requirements_into_structure.py::test_module_wrapper_returns_dict
+summary: 11 passed, 0 failed (builtin-test-runner)
+```
+
+## Stderr
+```text
+
+```

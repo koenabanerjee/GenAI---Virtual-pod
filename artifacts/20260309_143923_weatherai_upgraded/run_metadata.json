@@ -1,0 +1,68 @@
+{
+  "run_id": "20260309_143923_weatherai_upgraded",
+  "project_name": "weatherai-upgraded",
+  "requirements": "Build a weather prediction system with data ingestion, forecast API, and alerts",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "Build a weather prediction system with data ingestion, forecast API, and alerts",
+      "persona": "Project Lead",
+      "goal": "Build a weather prediction system with data ingestion, forecast API, and alerts",
+      "benefit": "The project delivers traceable SDLC outcomes.",
+      "acceptance_criteria": [
+        "A standardized artifact is produced for this requirement.",
+        "Generated outputs can be traced to the source requirement.",
+        "The output is reviewable by the project manager."
+      ],
+      "priority": "High"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "build_a_weather_prediction_system_with_data_ingestion_forecast_a",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\development\\generated_app\\build_a_weather_prediction_system_with_data_ingestion_forecast_a.py",
+      "summary": "Build a weather prediction system with data ingestion, forecast API, and alerts"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_build_a_weather_prediction_system_with_data_ingestion_forecast_a",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\testing\\tests\\test_build_a_weather_prediction_system_with_data_ingestion_forecast_a.py",
+      "coverage_focus": "Build a weather prediction system with data ingestion, forecast API, and alerts"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 3,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "...                                                                      [100%]\n============================== warnings summary ===============================\n..\\..\\..\\..\\..\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475\n  C:\\Users\\Koena\\AppData\\Roaming\\Python\\Python313\\site-packages\\_pytest\\cacheprovider.py:475: PytestCacheWarning: could not create cache path C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\.pytest_cache\\v\\cache\\nodeids: [WinError 5] Access is denied: 'C:\\\\Users\\\\Koena\\\\OneDrive\\\\Desktop\\\\GenAI\\\\artifacts\\\\20260309_143923_weatherai_upgraded\\\\pytest-cache-files-napzn70_'\n    config.cache.set(\"cache/nodeids\", sorted(self.cached_nodeids))\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n3 passed, 1 warning in 0.05s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "governance": "completed"
+  },
+  "pm_summary": "Project: weatherai-upgraded\nRun ID: 20260309_143923_weatherai_upgraded\nStage status:\n- analysis: completed\n- development: completed\n- testing: completed\n- governance: completed\nUser stories: 1\nCode modules: 1\nTest files: 1\nTest results: passed=3, failed=0, skipped=0\nLLM: provider=mock, model=mock, mock=True\nArtifacts dir: C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded",
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "mock",
+  "llm_model_id": "mock",
+  "llm_is_mock": true,
+  "llm_reason": "Mock provider explicitly configured.",
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\development\\generated_app\\build_a_weather_prediction_system_with_data_ingestion_forecast_a.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\testing\\tests\\test_build_a_weather_prediction_system_with_data_ingestion_forecast_a.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\reports\\bug_summary.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\reports\\pm_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260309_143923_weatherai_upgraded\\run_metadata.json"
+}
