@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import json
+import threading
+from copy import deepcopy
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Callable
@@ -71,6 +73,8 @@ class VirtualDevelopmentPod:
         )
         self.crewai_planner = CrewAIPlanner(enabled=self.config.enable_crewai)
         self._last_run: RunResult | None = None
+        self._state_lock = threading.Lock()
+        self._active_run_snapshot: dict[str, object] | None = None
 
     def run_sdlc(
         self,
@@ -112,6 +116,15 @@ class VirtualDevelopmentPod:
                 "management": "pending",
             },
         )
+        with self._state_lock:
+            self._active_run_snapshot = {
+                "run_id": run_id,
+                "project_name": project_name,
+                "is_running": True,
+                "error": "",
+                "stage_status": dict(run_result.stage_status),
+                "agent_logs": [],
+            }
         self._emit_event(
             run_result,
             event_callback,
@@ -265,11 +278,8 @@ class VirtualDevelopmentPod:
             agent="Product Manager Agent",
             stage="management",
             status="in_progress",
-            message="Reviewing artifacts for status, quality, and completeness.",
+            message="Refreshing PM monitoring context for live chatbot updates.",
         )
-        pm_summary_file = reports_dir / "product_manager_summary.md"
-        run_result.pm_summary = self.product_manager.summarize_run(run_result)
-        pm_summary_file.write_text(run_result.pm_summary, encoding="utf-8")
         run_result.stage_status["management"] = "completed"
         self._emit_event(
             run_result,
@@ -277,13 +287,12 @@ class VirtualDevelopmentPod:
             agent="Product Manager Agent",
             stage="management",
             status="completed",
-            message="Generated PM summary and workflow gap analysis.",
+            message="PM monitoring context is ready.",
         )
 
         self._index_artifacts(
             run_result=run_result,
             user_stories_file=user_stories_file,
-            pm_summary_file=pm_summary_file,
         )
 
         metadata_path = run_dir / "run_metadata.json"
@@ -302,9 +311,19 @@ class VirtualDevelopmentPod:
         )
 
         self._last_run = run_result
+        self.mark_live_run_finished()
         return run_result
 
     def pm_chat(self, query: str, *, run_id: str | None = None) -> str:
+        live_status = self.get_live_status()
+        if live_status is not None and bool(live_status.get("is_running")):
+            return self.product_manager.answer_live_query(
+                query=query,
+                live_status=live_status,
+                vector_store=self.vector_store,
+                top_k=self.config.top_k_context,
+            )
+
         if self._last_run is None:
             return "No run is available yet. Execute run_sdlc first."
         if run_id and self._last_run.run_id != run_id:
@@ -327,7 +346,6 @@ class VirtualDevelopmentPod:
         *,
         run_result: RunResult,
         user_stories_file: Path,
-        pm_summary_file: Path | None = None,
     ) -> None:
         run_id = run_result.run_id
         indexed: list[str] = []
@@ -369,15 +387,21 @@ class VirtualDevelopmentPod:
             )
             indexed.append(str(run_result.test_execution.bug_summary_path))
 
-        if pm_summary_file is not None:
-            self.vector_store.index_file(
-                file_path=pm_summary_file,
-                artifact_type="pm_summary",
-                run_id=run_id,
-            )
-            indexed.append(str(pm_summary_file))
-
         run_result.indexed_artifacts = indexed
+
+    def get_live_status(self) -> dict[str, object] | None:
+        with self._state_lock:
+            if self._active_run_snapshot is None:
+                return None
+            return deepcopy(self._active_run_snapshot)
+
+    def mark_live_run_finished(self, *, error: str | None = None) -> None:
+        with self._state_lock:
+            if self._active_run_snapshot is None:
+                return
+            self._active_run_snapshot["is_running"] = False
+            if error:
+                self._active_run_snapshot["error"] = error
 
     def _emit_event(
         self,
@@ -392,6 +416,17 @@ class VirtualDevelopmentPod:
         timestamp = datetime.now(timezone.utc).strftime("%H:%M:%S")
         log_line = f"[{timestamp}] [{agent}] ({stage}) {status}: {message}"
         run_result.agent_logs.append(log_line)
+
+        with self._state_lock:
+            snapshot = self._active_run_snapshot
+            if snapshot is not None and snapshot.get("run_id") == run_result.run_id:
+                logs = snapshot.get("agent_logs")
+                if isinstance(logs, list):
+                    logs.append(log_line)
+                stage_status = snapshot.get("stage_status")
+                if isinstance(stage_status, dict) and stage in stage_status:
+                    stage_status[stage] = status
+
         if event_callback is None:
             return
         payload = {

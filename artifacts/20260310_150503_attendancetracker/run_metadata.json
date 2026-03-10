@@ -1,0 +1,158 @@
+{
+  "run_id": "20260310_150503_attendancetracker",
+  "project_name": "attendanceTracker",
+  "requirements": "Build a student attendance management system",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "Student Attendance Marking",
+      "persona": "Teacher",
+      "goal": "Mark attendance for students in a class",
+      "benefit": "Accurately track student attendance",
+      "acceptance_criteria": [
+        "As a teacher, I can mark attendance for all students in a class",
+        "Attendance marks are saved and persist in the system",
+        "Attendance reports can be generated for a specific class and date range"
+      ],
+      "priority": "High"
+    },
+    {
+      "story_id": "US-002",
+      "title": "Student Attendance Viewing",
+      "persona": "Student",
+      "goal": "View their attendance records",
+      "benefit": "Students can monitor their attendance and take action if necessary",
+      "acceptance_criteria": [
+        "Students can view their attendance records for the current semester",
+        "Students can view their attendance records for previous semesters",
+        "Students can download or print their attendance records"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "story_id": "US-003",
+      "title": "Student Attendance Notifications",
+      "persona": "Parent/Guardian",
+      "goal": "Receive notifications about student attendance",
+      "benefit": "Parents/guardians are informed of attendance issues",
+      "acceptance_criteria": [
+        "Parents/guardians receive notifications when a student has excessive absences",
+        "Parents/guardians can view their child's attendance records online",
+        "Parents/guardians can receive attendance notifications via email or SMS"
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "design_artifacts": [
+    {
+      "story_id": "US-001",
+      "component_name": "student_attendance_marking",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\design\\student_attendance_marking_design.md",
+      "summary": "Mark attendance for students in a class"
+    },
+    {
+      "story_id": "US-002",
+      "component_name": "student_attendance_viewing",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\design\\student_attendance_viewing_design.md",
+      "summary": "View their attendance records"
+    },
+    {
+      "story_id": "US-003",
+      "component_name": "student_attendance_notifications",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\design\\student_attendance_notifications_design.md",
+      "summary": "Receive notifications about student attendance"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "student_attendance_marking",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\development\\generated_app\\student_attendance_marking.py",
+      "summary": "Mark attendance for students in a class"
+    },
+    {
+      "story_id": "US-002",
+      "module_name": "student_attendance_viewing",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\development\\generated_app\\student_attendance_viewing.py",
+      "summary": "View their attendance records"
+    },
+    {
+      "story_id": "US-003",
+      "module_name": "student_attendance_notifications",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\development\\generated_app\\student_attendance_notifications.py",
+      "summary": "Receive notifications about student attendance"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_student_attendance_marking",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\testing\\tests\\test_student_attendance_marking.py",
+      "coverage_focus": "Mark attendance for students in a class"
+    },
+    {
+      "story_id": "US-002",
+      "test_name": "test_student_attendance_viewing",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\testing\\tests\\test_student_attendance_viewing.py",
+      "coverage_focus": "View their attendance records"
+    },
+    {
+      "story_id": "US-003",
+      "test_name": "test_student_attendance_notifications",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\testing\\tests\\test_student_attendance_notifications.py",
+      "coverage_focus": "Receive notifications about student attendance"
+    }
+  ],
+  "test_execution": {
+    "return_code": 2,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": "\n=================================== ERRORS ====================================\n______ ERROR collecting testing/tests/test_integration_generated_app.py _______\ntesting\\tests\\test_integration_generated_app.py:3: in <module>\n    from generated_app.student_attendance_marking import build_student_attendance_marking\ndevelopment\\generated_app\\student_attendance_marking.py:6: in <module>\n    @dataclass\n     ^^^^^^^^^\nE   NameError: name 'dataclass' is not defined\n=========================== short test summary info ===========================\nERROR testing/tests/test_integration_generated_app.py - NameError: name 'data...\n!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!\n1 error in 0.18s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "design": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "management": "completed"
+  },
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "langchain_hf_endpoint",
+  "llm_model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "llm_is_mock": false,
+  "llm_reason": "",
+  "agent_logs": [
+    "[15:05:04] [Orchestrator] (setup) in_progress: Initialized run 20260310_150503_attendancetracker. fast_mode=True, execute_tests=True, use_chromadb=False",
+    "[15:05:04] [Orchestrator] (setup) completed: Initial handoff plan prepared.",
+    "[15:05:04] [Business Analyst Agent] (analysis) in_progress: Analyzing business requirements and drafting user stories.",
+    "[15:05:23] [Business Analyst Agent] (analysis) completed: Generated 3 user stories.",
+    "[15:05:23] [Design Agent] (design) in_progress: Creating design specifications from user stories.",
+    "[15:06:27] [Design Agent] (design) completed: Generated 3 design artifacts.",
+    "[15:06:27] [Developer Agent] (development) in_progress: Generating implementation modules using design context.",
+    "[15:08:01] [Developer Agent] (development) completed: Generated 3 code modules.",
+    "[15:08:01] [Testing Agent] (testing) in_progress: Building test assets (fast-mode templates).",
+    "[15:08:03] [Testing Agent] (testing) completed: Generated 3 test modules. Executed tests: passed=0, failed=0, skipped=0.",
+    "[15:08:03] [Product Manager Agent] (management) in_progress: Refreshing PM monitoring context for live chatbot updates.",
+    "[15:08:03] [Product Manager Agent] (management) completed: PM monitoring context is ready."
+  ],
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\design\\student_attendance_marking_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\design\\student_attendance_viewing_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\design\\student_attendance_notifications_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\development\\generated_app\\student_attendance_marking.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\development\\generated_app\\student_attendance_viewing.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\development\\generated_app\\student_attendance_notifications.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\testing\\tests\\test_student_attendance_marking.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\testing\\tests\\test_student_attendance_viewing.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\testing\\tests\\test_student_attendance_notifications.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\reports\\bug_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_150503_attendancetracker\\run_metadata.json"
+}

@@ -92,7 +92,6 @@ The run creates artifacts under `artifacts/<timestamp>_<project>/`:
 - `testing/tests/*.py`
 - `reports/test_report.md`
 - `reports/bug_summary.md`
-- `reports/product_manager_summary.md`
 - `run_metadata.json`
 
 ## Run PM Chatbot UI
@@ -106,7 +105,7 @@ Use the UI to:
 - View stage-by-stage progress.
 - Track live per-agent activity logs (analysis, design, development, testing).
 - Inspect quality outputs and test status.
-- Ask PM questions about scope, quality, and completeness.
+- Ask PM questions about scope, quality, and completeness even while SDLC is running.
 
 Execution speed controls are available in the sidebar:
 - `Fast Mode` to reduce generation overhead.

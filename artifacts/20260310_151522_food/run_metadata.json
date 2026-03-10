@@ -1,0 +1,163 @@
+{
+  "run_id": "20260310_151522_food",
+  "project_name": "food",
+  "requirements": "Build a food delivery app",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "User can place an order for food delivery",
+      "persona": "Food Consumer",
+      "goal": "Place an order for food delivery to their location",
+      "benefit": "Conveniently order food for delivery without leaving their home",
+      "acceptance_criteria": [
+        "User can view available food options",
+        "User can select a food item and customize order",
+        "User can enter their delivery address",
+        "User can confirm order and receive a confirmation message with estimated delivery time",
+        "User can track the status of their order in real-time"
+      ],
+      "priority": "High"
+    },
+    {
+      "story_id": "US-002",
+      "title": "Restaurant can manage their menu and accept orders",
+      "persona": "Restaurant Manager",
+      "goal": "Manage menu items and accept orders for delivery",
+      "benefit": "Efficiently manage orders and update menu items in real-time",
+      "acceptance_criteria": [
+        "Restaurant can view and update menu items",
+        "Restaurant can see real-time order notifications",
+        "Restaurant can accept or decline orders",
+        "Restaurant can communicate with the user regarding order status"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "story_id": "US-003",
+      "title": "Delivery driver can manage their route and accept orders",
+      "persona": "Delivery Driver",
+      "goal": "Manage their route and accept orders for delivery",
+      "benefit": "Efficiently manage their delivery route and accept orders",
+      "acceptance_criteria": [
+        "Driver can view their current route and upcoming orders",
+        "Driver can accept or decline orders",
+        "Driver can navigate to the delivery location using the app",
+        "Driver can update order status in real-time",
+        "Driver can communicate with the user regarding estimated delivery time"
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "design_artifacts": [
+    {
+      "story_id": "US-001",
+      "component_name": "user_can_place_an_order_for_food_delivery",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\design\\user_can_place_an_order_for_food_delivery_design.md",
+      "summary": "Place an order for food delivery to their location"
+    },
+    {
+      "story_id": "US-002",
+      "component_name": "restaurant_can_manage_their_menu_and_accept_orders",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\design\\restaurant_can_manage_their_menu_and_accept_orders_design.md",
+      "summary": "Manage menu items and accept orders for delivery"
+    },
+    {
+      "story_id": "US-003",
+      "component_name": "delivery_driver_can_manage_their_route_and_accept_orders",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\design\\delivery_driver_can_manage_their_route_and_accept_orders_design.md",
+      "summary": "Manage their route and accept orders for delivery"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "user_can_place_an_order_for_food_delivery",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\development\\generated_app\\user_can_place_an_order_for_food_delivery.py",
+      "summary": "Place an order for food delivery to their location"
+    },
+    {
+      "story_id": "US-002",
+      "module_name": "restaurant_can_manage_their_menu_and_accept_orders",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\development\\generated_app\\restaurant_can_manage_their_menu_and_accept_orders.py",
+      "summary": "Manage menu items and accept orders for delivery"
+    },
+    {
+      "story_id": "US-003",
+      "module_name": "delivery_driver_can_manage_their_route_and_accept_orders",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\development\\generated_app\\delivery_driver_can_manage_their_route_and_accept_orders.py",
+      "summary": "Manage their route and accept orders for delivery"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_user_can_place_an_order_for_food_delivery",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\testing\\tests\\test_user_can_place_an_order_for_food_delivery.py",
+      "coverage_focus": "Place an order for food delivery to their location"
+    },
+    {
+      "story_id": "US-002",
+      "test_name": "test_restaurant_can_manage_their_menu_and_accept_orders",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\testing\\tests\\test_restaurant_can_manage_their_menu_and_accept_orders.py",
+      "coverage_focus": "Manage menu items and accept orders for delivery"
+    },
+    {
+      "story_id": "US-003",
+      "test_name": "test_delivery_driver_can_manage_their_route_and_accept_orders",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\testing\\tests\\test_delivery_driver_can_manage_their_route_and_accept_orders.py",
+      "coverage_focus": "Manage their route and accept orders for delivery"
+    }
+  ],
+  "test_execution": {
+    "return_code": 1,
+    "passed": 3,
+    "failed": 4,
+    "skipped": 0,
+    "stdout": ".FF.F.F                                                                  [100%]\n================================== FAILURES ===================================\n______________________ test_module_wrapper_returns_dict _______________________\n\n    def test_module_wrapper_returns_dict():\n        module = importlib.import_module(\"generated_app.delivery_driver_can_manage_their_route_and_accept_orders\")\n        wrapper = getattr(module, \"build_delivery_driver_can_manage_their_route_and_accept_orders\")\n>       result = wrapper({\"sample\": \"payload\"})\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntesting\\tests\\test_delivery_driver_can_manage_their_route_and_accept_orders.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\npayload = {'sample': 'payload'}\n\n    def build_delivery_driver_can_manage_their_route_and_accept_orders(payload: Dict[str, Any]) -> Dict[str, Any]:\n        \"\"\"Function entrypoint used by generated tests and integration flows.\"\"\"\n>       service = DeliveryDriverCanManageTheirRouteAndAcceptOrdersService(payload[\"base_url\"])\n                                                                          ^^^^^^^^^^^^^^^^^^^\nE       KeyError: 'base_url'\n\ndevelopment\\generated_app\\delivery_driver_can_manage_their_route_and_accept_orders.py:72: KeyError\n_______________________ test_generated_app_integration ________________________\n\n    def test_generated_app_integration():\n>       result_1 = build_user_can_place_an_order_for_food_delivery({'input': 'sample'})\n                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntesting\\tests\\test_integration_generated_app.py:9: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ndevelopment\\generated_app\\user_can_place_an_order_for_food_delivery.py:48: in build_user_can_place_an_order_for_food_delivery\n    return UserCanPlaceAnOrderForFoodDeliveryService().execute(payload)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = UserCanPlaceAnOrderForFoodDeliveryService()\npayload = {'input': 'sample'}\n\n    def execute(self, payload: Dict[str, Any]) -> Dict[str, Any]:\n>       food_options = payload[\"food_options\"]  # Fetch food options from the backend API\n                       ^^^^^^^^^^^^^^^^^^^^^^^\nE       KeyError: 'food_options'\n\ndevelopment\\generated_app\\user_can_place_an_order_for_food_delivery.py:12: KeyError\n______________________ test_module_wrapper_returns_dict _______________________\n\n    def test_module_wrapper_returns_dict():\n        module = importlib.import_module(\"generated_app.restaurant_can_manage_their_menu_and_accept_orders\")\n        wrapper = getattr(module, \"build_restaurant_can_manage_their_menu_and_accept_orders\")\n        result = wrapper({\"sample\": \"payload\"})\n>       assert isinstance(result, dict)\nE       assert False\nE        +  where False = isinstance(None, dict)\n\ntesting\\tests\\test_restaurant_can_manage_their_menu_and_accept_orders.py:15: AssertionError\n______________________ test_module_wrapper_returns_dict _______________________\n\n    def test_module_wrapper_returns_dict():\n        module = importlib.import_module(\"generated_app.user_can_place_an_order_for_food_delivery\")\n        wrapper = getattr(module, \"build_user_can_place_an_order_for_food_delivery\")\n>       result = wrapper({\"sample\": \"payload\"})\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\ntesting\\tests\\test_user_can_place_an_order_for_food_delivery.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\ndevelopment\\generated_app\\user_can_place_an_order_for_food_delivery.py:48: in build_user_can_place_an_order_for_food_delivery\n    return UserCanPlaceAnOrderForFoodDeliveryService().execute(payload)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = UserCanPlaceAnOrderForFoodDeliveryService()\npayload = {'sample': 'payload'}\n\n    def execute(self, payload: Dict[str, Any]) -> Dict[str, Any]:\n>       food_options = payload[\"food_options\"]  # Fetch food options from the backend API\n                       ^^^^^^^^^^^^^^^^^^^^^^^\nE       KeyError: 'food_options'\n\ndevelopment\\generated_app\\user_can_place_an_order_for_food_delivery.py:12: KeyError\n=========================== short test summary info ===========================\nFAILED testing/tests/test_delivery_driver_can_manage_their_route_and_accept_orders.py::test_module_wrapper_returns_dict\nFAILED testing/tests/test_integration_generated_app.py::test_generated_app_integration\nFAILED testing/tests/test_restaurant_can_manage_their_menu_and_accept_orders.py::test_module_wrapper_returns_dict\nFAILED testing/tests/test_user_can_place_an_order_for_food_delivery.py::test_module_wrapper_returns_dict\n4 failed, 3 passed in 0.21s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "design": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "management": "completed"
+  },
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "langchain_hf_endpoint",
+  "llm_model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "llm_is_mock": false,
+  "llm_reason": "",
+  "agent_logs": [
+    "[15:15:23] [Orchestrator] (setup) in_progress: Initialized run 20260310_151522_food. fast_mode=True, execute_tests=True, use_chromadb=False",
+    "[15:15:23] [Orchestrator] (setup) completed: Initial handoff plan prepared.",
+    "[15:15:23] [Business Analyst Agent] (analysis) in_progress: Analyzing business requirements and drafting user stories.",
+    "[15:15:45] [Business Analyst Agent] (analysis) completed: Generated 3 user stories.",
+    "[15:15:45] [Design Agent] (design) in_progress: Creating design specifications from user stories.",
+    "[15:17:21] [Design Agent] (design) completed: Generated 3 design artifacts.",
+    "[15:17:21] [Developer Agent] (development) in_progress: Generating implementation modules using design context.",
+    "[15:18:53] [Developer Agent] (development) completed: Generated 3 code modules.",
+    "[15:18:53] [Testing Agent] (testing) in_progress: Building test assets (fast-mode templates).",
+    "[15:18:55] [Testing Agent] (testing) completed: Generated 3 test modules. Executed tests: passed=3, failed=4, skipped=0.",
+    "[15:18:55] [Product Manager Agent] (management) in_progress: Refreshing PM monitoring context for live chatbot updates.",
+    "[15:18:55] [Product Manager Agent] (management) completed: PM monitoring context is ready."
+  ],
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\design\\user_can_place_an_order_for_food_delivery_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\design\\restaurant_can_manage_their_menu_and_accept_orders_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\design\\delivery_driver_can_manage_their_route_and_accept_orders_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\development\\generated_app\\user_can_place_an_order_for_food_delivery.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\development\\generated_app\\restaurant_can_manage_their_menu_and_accept_orders.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\development\\generated_app\\delivery_driver_can_manage_their_route_and_accept_orders.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\testing\\tests\\test_user_can_place_an_order_for_food_delivery.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\testing\\tests\\test_restaurant_can_manage_their_menu_and_accept_orders.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\testing\\tests\\test_delivery_driver_can_manage_their_route_and_accept_orders.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\reports\\bug_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_151522_food\\run_metadata.json"
+}

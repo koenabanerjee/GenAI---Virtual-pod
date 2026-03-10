@@ -88,7 +88,6 @@ class RunResult:
     test_artifacts: list[TestArtifact] = field(default_factory=list)
     test_execution: TestExecutionResult | None = None
     stage_status: dict[str, str] = field(default_factory=dict)
-    pm_summary: str = ""
     crew_notes: str = ""
     llm_provider: str = ""
     llm_model_id: str = ""
@@ -114,7 +113,6 @@ class RunResult:
             if self.test_execution
             else None,
             "stage_status": self.stage_status,
-            "pm_summary": self.pm_summary,
             "crew_notes": self.crew_notes,
             "llm_provider": self.llm_provider,
             "llm_model_id": self.llm_model_id,

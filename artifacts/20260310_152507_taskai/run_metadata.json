@@ -1,0 +1,158 @@
+{
+  "run_id": "20260310_152507_taskai",
+  "project_name": "TaskAI",
+  "requirements": "Create a team task management application where users can create projects, assign tasks to team members, set priorities and deadlines, and track progress. Include notifications for due dates, a Kanban board view, time tracking, and export reports to PDF/Excel.",
+  "run_dir": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai",
+  "user_stories": [
+    {
+      "story_id": "US-001",
+      "title": "As a project manager, I want to create a new project in the team task management application",
+      "persona": "Project Manager",
+      "goal": "Create and manage new projects",
+      "benefit": "Effectively plan and organize team work",
+      "acceptance_criteria": [
+        "Can create a new project with a name and description",
+        "Project creation is persisted in the system",
+        "Project can be accessed by team members"
+      ],
+      "priority": "High"
+    },
+    {
+      "story_id": "US-002",
+      "title": "As a team member, I want to be able to view and manage my assigned tasks in the team task management application",
+      "persona": "Team Member",
+      "goal": "Manage assigned tasks",
+      "benefit": "Stay informed and focused on personal tasks",
+      "acceptance_criteria": [
+        "Can view assigned tasks in a Kanban board",
+        "Can update task status (In Progress, Blocked, Done)",
+        "Can receive notifications for task updates and deadlines"
+      ],
+      "priority": "Medium"
+    },
+    {
+      "story_id": "US-003",
+      "title": "As a project manager, I want to export project reports to PDF and Excel formats from the team task management application",
+      "persona": "Project Manager",
+      "goal": "Generate project reports for stakeholders",
+      "benefit": "Effectively communicate project status and progress",
+      "acceptance_criteria": [
+        "Can export project data to PDF and Excel formats",
+        "Exported reports accurately reflect project data",
+        "Exported reports are easily readable and understandable"
+      ],
+      "priority": "Medium"
+    }
+  ],
+  "design_artifacts": [
+    {
+      "story_id": "US-001",
+      "component_name": "as_a_project_manager_i_want_to_create_a_new_project_in_the_team",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\design\\as_a_project_manager_i_want_to_create_a_new_project_in_the_team_design.md",
+      "summary": "Create and manage new projects"
+    },
+    {
+      "story_id": "US-002",
+      "component_name": "as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\design\\as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne_design.md",
+      "summary": "Manage assigned tasks"
+    },
+    {
+      "story_id": "US-003",
+      "component_name": "as_a_project_manager_i_want_to_export_project_reports_to_pdf_and",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\design\\as_a_project_manager_i_want_to_export_project_reports_to_pdf_and_design.md",
+      "summary": "Generate project reports for stakeholders"
+    }
+  ],
+  "code_artifacts": [
+    {
+      "story_id": "US-001",
+      "module_name": "as_a_project_manager_i_want_to_create_a_new_project_in_the_team",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\development\\generated_app\\as_a_project_manager_i_want_to_create_a_new_project_in_the_team.py",
+      "summary": "Create and manage new projects"
+    },
+    {
+      "story_id": "US-002",
+      "module_name": "as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\development\\generated_app\\as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne.py",
+      "summary": "Manage assigned tasks"
+    },
+    {
+      "story_id": "US-003",
+      "module_name": "as_a_project_manager_i_want_to_export_project_reports_to_pdf_and",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\development\\generated_app\\as_a_project_manager_i_want_to_export_project_reports_to_pdf_and.py",
+      "summary": "Generate project reports for stakeholders"
+    }
+  ],
+  "test_artifacts": [
+    {
+      "story_id": "US-001",
+      "test_name": "test_as_a_project_manager_i_want_to_create_a_new_project_in_the_team",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\testing\\tests\\test_as_a_project_manager_i_want_to_create_a_new_project_in_the_team.py",
+      "coverage_focus": "Create and manage new projects"
+    },
+    {
+      "story_id": "US-002",
+      "test_name": "test_as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\testing\\tests\\test_as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne.py",
+      "coverage_focus": "Manage assigned tasks"
+    },
+    {
+      "story_id": "US-003",
+      "test_name": "test_as_a_project_manager_i_want_to_export_project_reports_to_pdf_and",
+      "file_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\testing\\tests\\test_as_a_project_manager_i_want_to_export_project_reports_to_pdf_and.py",
+      "coverage_focus": "Generate project reports for stakeholders"
+    }
+  ],
+  "test_execution": {
+    "return_code": 0,
+    "passed": 7,
+    "failed": 0,
+    "skipped": 0,
+    "stdout": ".......                                                                  [100%]\n7 passed in 0.07s\n",
+    "stderr": "",
+    "report_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\reports\\test_report.md",
+    "bug_summary_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\reports\\bug_summary.md"
+  },
+  "stage_status": {
+    "analysis": "completed",
+    "design": "completed",
+    "development": "completed",
+    "testing": "completed",
+    "management": "completed"
+  },
+  "crew_notes": "CrewAI handoff planning is disabled.",
+  "llm_provider": "langchain_hf_endpoint",
+  "llm_model_id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "llm_is_mock": false,
+  "llm_reason": "",
+  "agent_logs": [
+    "[15:25:08] [Orchestrator] (setup) in_progress: Initialized run 20260310_152507_taskai. fast_mode=True, execute_tests=True, use_chromadb=False",
+    "[15:25:08] [Orchestrator] (setup) completed: Initial handoff plan prepared.",
+    "[15:25:08] [Business Analyst Agent] (analysis) in_progress: Analyzing business requirements and drafting user stories.",
+    "[15:25:28] [Business Analyst Agent] (analysis) completed: Generated 3 user stories.",
+    "[15:25:28] [Design Agent] (design) in_progress: Creating design specifications from user stories.",
+    "[15:26:36] [Design Agent] (design) completed: Generated 3 design artifacts.",
+    "[15:26:36] [Developer Agent] (development) in_progress: Generating implementation modules using design context.",
+    "[15:27:59] [Developer Agent] (development) completed: Generated 3 code modules.",
+    "[15:27:59] [Testing Agent] (testing) in_progress: Building test assets (fast-mode templates).",
+    "[15:28:02] [Testing Agent] (testing) completed: Generated 3 test modules. Executed tests: passed=7, failed=0, skipped=0.",
+    "[15:28:02] [Product Manager Agent] (management) in_progress: Refreshing PM monitoring context for live chatbot updates.",
+    "[15:28:02] [Product Manager Agent] (management) completed: PM monitoring context is ready."
+  ],
+  "indexed_artifacts": [
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\analysis\\user_stories.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\design\\as_a_project_manager_i_want_to_create_a_new_project_in_the_team_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\design\\as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\design\\as_a_project_manager_i_want_to_export_project_reports_to_pdf_and_design.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\development\\generated_app\\as_a_project_manager_i_want_to_create_a_new_project_in_the_team.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\development\\generated_app\\as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\development\\generated_app\\as_a_project_manager_i_want_to_export_project_reports_to_pdf_and.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\testing\\tests\\test_as_a_project_manager_i_want_to_create_a_new_project_in_the_team.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\testing\\tests\\test_as_a_team_member_i_want_to_be_able_to_view_and_manage_my_assigne.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\testing\\tests\\test_as_a_project_manager_i_want_to_export_project_reports_to_pdf_and.py",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\reports\\test_report.md",
+    "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\reports\\bug_summary.md"
+  ],
+  "metadata_path": "C:\\Users\\Koena\\OneDrive\\Desktop\\GenAI\\artifacts\\20260310_152507_taskai\\run_metadata.json"
+}
