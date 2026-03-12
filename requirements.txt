@@ -9,3 +9,4 @@ sentence-transformers>=3.0.0
 streamlit>=1.38.0
 pytest>=8.2.0
 python-dotenv>=1.0.0
+PyPDF2
