@@ -1,3 +1,4 @@
+
 # AI-Powered Virtual Development Pod
 
 This project simulates a real IT delivery team and automates the full SDLC using a multi-agent AI framework.
@@ -6,11 +7,19 @@ This project simulates a real IT delivery team and automates the full SDLC using
 
 - Accepts high-level business requirements.
 - Runs a role-based pipeline:
+<<<<<<< HEAD
   - Business Analyst Agent -> user stories + acceptance criteria.
   - Design Agent -> design specifications and architecture notes.
   - Developer Agent -> Python source modules.
   - Testing Agent -> unit/integration tests + execution + reports.
   - Product Manager Agent -> stage monitoring, quality/completeness checks, and chatbot answers.
+=======
+  - Business Analyst Agent → user stories + acceptance criteria.
+  - Design Agent → design specifications and architecture notes.
+  - Developer Agent → Python source modules.
+  - Testing Agent → unit/integration tests + execution + reports.
+  - Product Manager Agent → stage monitoring, quality/completeness checks, and chatbot answers.
+>>>>>>> ba1102ad2ca23b2b4e3645c43282f3c754680352
 - Enforces enterprise-style artifact templates from `org_repository/templates`.
 - Stores artifacts in vector memory (ChromaDB when available, local fallback otherwise) for retrieval-augmented PM responses.
 - Exposes a Streamlit chatbot dashboard for project leads.
@@ -63,8 +72,12 @@ pip install -r requirements.txt
 cp .env.example .env
 ```
 
+<<<<<<< HEAD
 The `.env.example` is configured for real LangChain + Hugging Face endpoint usage.
 Set a valid `HUGGINGFACEHUB_API_TOKEN` before running.
+=======
+The `.env.example` is configured for real LangChain + Hugging Face endpoint usage. Set a valid `HUGGINGFACEHUB_API_TOKEN` before running.
+>>>>>>> ba1102ad2ca23b2b4e3645c43282f3c754680352
 
 If you want offline fallback behavior, set:
 
@@ -132,3 +145,8 @@ pytest -q
 
 - Artifacts are intentionally template-driven to simulate enterprise SDLC governance.
 - Vector indexing uses ChromaDB when installed and functioning; otherwise a local searchable index is used to keep the workflow operational.
+<<<<<<< HEAD
+=======
+
+---
+>>>>>>> ba1102ad2ca23b2b4e3645c43282f3c754680352
