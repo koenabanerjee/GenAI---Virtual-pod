@@ -1,0 +1,28 @@
+"""Auto-generated module for {story_id}: {story_title}."""
+
+from __future__ import annotations
+
+from dataclasses import dataclass
+from typing import Any, Dict
+
+
+@dataclass
+class {class_name}:
+    """Implementation class aligned to user story {story_id}."""
+
+    story_id: str = "{story_id}"
+
+    def execute(self, payload: Dict[str, Any]) -> Dict[str, Any]:
+        result: Dict[str, Any] = {{
+            "story_id": self.story_id,
+            "status": "implemented",
+            "input": payload,
+            "summary": "{goal}",
+            "acceptance": "{criteria_summary}",
+        }}
+        return result
+
+
+def build_{module_name}(payload: Dict[str, Any]) -> Dict[str, Any]:
+    """Function entrypoint used by generated tests and integration flows."""
+    return {class_name}().execute(payload)
