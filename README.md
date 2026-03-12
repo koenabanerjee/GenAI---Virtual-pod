@@ -1,152 +1,248 @@
-
 # AI-Powered Virtual Development Pod
 
-This project simulates a real IT delivery team and automates the full SDLC using a multi-agent AI framework.
+An **AI-driven multi-agent SDLC automation platform** that simulates a real software development team to transform business requirements into fully functional software artifacts including user stories, UI mockups, design specifications, source code, and test reports.
 
-## What It Does
+The system orchestrates multiple AI agents to automate the **entire Software Development Life Cycle (SDLC)** from requirements analysis to testing and project evaluation.
 
-- Accepts high-level business requirements.
-- Runs a role-based pipeline:
-<<<<<<< HEAD
-  - Business Analyst Agent -> user stories + acceptance criteria.
-  - Design Agent -> design specifications and architecture notes.
-  - Developer Agent -> Python source modules.
-  - Testing Agent -> unit/integration tests + execution + reports.
-  - Product Manager Agent -> stage monitoring, quality/completeness checks, and chatbot answers.
-=======
-  - Business Analyst Agent → user stories + acceptance criteria.
-  - Design Agent → design specifications and architecture notes.
-  - Developer Agent → Python source modules.
-  - Testing Agent → unit/integration tests + execution + reports.
-  - Product Manager Agent → stage monitoring, quality/completeness checks, and chatbot answers.
->>>>>>> ba1102ad2ca23b2b4e3645c43282f3c754680352
-- Enforces enterprise-style artifact templates from `org_repository/templates`.
-- Stores artifacts in vector memory (ChromaDB when available, local fallback otherwise) for retrieval-augmented PM responses.
-- Exposes a Streamlit chatbot dashboard for project leads.
-- Captures active LLM mode in run metadata (`provider`, `model`, `mock/fallback status`).
-- Shows live agent activity logs during execution in the UI.
+---
 
-## Tech Stack
+# Project Overview
 
-- Backend: Python
-- Multi-agent orchestration: CrewAI (optional adapter) + native pipeline
-- LLM integration: LangChain + Hugging Face (optional), with `mock` offline fallback
-- Vector DB: ChromaDB (with local searchable fallback)
-- UI: Streamlit
+Traditional software development requires collaboration between multiple roles such as business analysts, designers, developers, testers, and project managers. This project simulates these roles using **specialized AI agents** working in a coordinated pipeline.
 
-## Project Structure
+The platform automatically converts **high-level business requirements into structured development artifacts** while providing a **real-time Streamlit dashboard** to monitor the progress of each development stage.
 
-```text
-.
-|- app/streamlit_app.py
-|- examples/sample_requirements.md
-|- org_repository/
-|  |- knowledge/engineering_standards.md
-|  |- templates/
-|- src/virtual_dev_pod/
-|  |- agents/
-|  |- config.py
-|  |- crew_adapter.py
-|  |- llm_factory.py
-|  |- models.py
-|  |- repository.py
-|  |- vector_store.py
-|  |- workflow.py
-|- tests/
-|- run_pipeline.py
-|- requirements.txt
+---
+
+# System Architecture
+
+The system follows a **multi-agent orchestration architecture**.
+
+Requirements Input
+↓
+Business Analyst Agent → User Stories
+↓
+UI Designer Agent → UI Mockups
+↓
+Design Agent → Architecture Specifications
+↓
+Developer Agent → Source Code
+↓
+Testing Agent → Test Cases & Reports
+↓
+Product Manager Agent → Project Summary & Quality Analysis
+
+All generated artifacts are displayed through a **Streamlit dashboard**.
+
+---
+
+# AI Agents
+
+### Business Analyst Agent
+
+* Analyzes business requirements
+* Converts them into structured user stories
+* Defines acceptance criteria and priorities
+
+### UI Designer Agent
+
+* Converts user stories into UI wireframes
+* Generates HTML mockups and UI specifications
+
+### Design Agent
+
+* Creates system architecture and design documents
+* Defines components and module structure
+
+### Developer Agent
+
+* Generates Python source code modules
+* Implements functionality based on user stories and design specifications
+
+### Testing Agent
+
+* Creates unit and integration tests
+* Executes tests and generates reports
+
+### Product Manager Agent
+
+* Evaluates project artifacts
+* Provides quality analysis and project summaries
+* Enables chatbot-based project queries
+
+---
+
+# Key Features
+
+* Multi-agent AI-driven SDLC automation
+* Automated user story generation
+* AI-generated UI wireframes and mockups
+* Automatic code generation
+* Auto test generation and execution
+* Real-time Streamlit dashboard
+* RFI / PDF requirement input
+* Artifact traceability and storage
+* Retrieval-Augmented Generation using vector store
+* Interactive Product Manager chatbot
+
+---
+
+# Technology Stack
+
+Language
+Python 3.13
+
+Frameworks
+Streamlit
+LangChain
+HuggingFace Transformers
+
+Libraries
+PyPDF2
+ChromaDB
+Pytest
+
+Architecture
+Multi-Agent AI Pipeline
+
+---
+
+# Project Structure
+
+```
+GenAI---Virtual-pod
+│
+├── src/
+│   └── virtual_dev_pod/
+│       ├── agents/
+│       ├── workflow.py
+│       ├── models.py
+│       ├── llm_factory.py
+│       ├── vector_store.py
+│       └── rfi.py
+│
+├── app/
+│   └── streamlit_app.py
+│
+├── tests/
+│
+├── run_pipeline.py
+├── requirements.txt
+├── .gitignore
+└── README.md
 ```
 
-## Setup
+---
 
-1. Create and activate a Python virtual environment.
-2. Install dependencies:
+# Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/koenabanerjee/GenAI---Virtual-pod.git
+cd GenAI---Virtual-pod
+```
+
+Create virtual environment
+
+```bash
+python -m venv .venv
+```
+
+Activate environment
+
+Windows
+
+```bash
+.venv\Scripts\activate
+```
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Create environment config:
+---
 
-```bash
-cp .env.example .env
-```
+# Running the Application
 
-<<<<<<< HEAD
-The `.env.example` is configured for real LangChain + Hugging Face endpoint usage.
-Set a valid `HUGGINGFACEHUB_API_TOKEN` before running.
-=======
-The `.env.example` is configured for real LangChain + Hugging Face endpoint usage. Set a valid `HUGGINGFACEHUB_API_TOKEN` before running.
->>>>>>> ba1102ad2ca23b2b4e3645c43282f3c754680352
-
-If you want offline fallback behavior, set:
-
-```bash
-VDP_LLM_PROVIDER=mock
-VDP_REQUIRE_REAL_LLM=false
-```
-
-## Run End-to-End SDLC (CLI)
-
-```bash
-python run_pipeline.py --requirements-file examples/sample_requirements.md --project-name demo-project --require-real-llm
-```
-
-Offline fallback run:
-
-```bash
-python run_pipeline.py --requirements-file examples/sample_requirements.md --project-name demo-project --llm-provider mock --allow-mock
-```
-
-The run creates artifacts under `artifacts/<timestamp>_<project>/`:
-
-- `analysis/user_stories.md`
-- `development/generated_app/*.py`
-- `testing/tests/*.py`
-- `reports/test_report.md`
-- `reports/bug_summary.md`
-- `run_metadata.json`
-
-## Run PM Chatbot UI
+Start the Streamlit UI
 
 ```bash
 streamlit run app/streamlit_app.py
 ```
 
-Use the UI to:
-- Submit high-level requirements.
-- View stage-by-stage progress.
-- Track live per-agent activity logs (analysis, design, development, testing).
-- Inspect quality outputs and test status.
-- Ask PM questions about scope, quality, and completeness even while SDLC is running.
+The dashboard will open in your browser where you can:
 
-Execution speed controls are available in the sidebar:
-- `Fast Mode` to reduce generation overhead.
-- `Execute Tests` toggle.
-- `Use ChromaDB Embeddings` toggle.
-- `Max User Stories` slider.
-
-## CrewAI + LangChain/Hugging Face Modes
-
-- Set `VDP_LLM_PROVIDER=langchain_hf` and add `HUGGINGFACEHUB_API_TOKEN` to use LangChain Hugging Face models.
-- Preferred endpoint mode: `VDP_LLM_PROVIDER=langchain_hf_endpoint`
-- Optional local transformers mode: `VDP_LLM_PROVIDER=langchain_hf_local`
-- Add `VDP_REQUIRE_REAL_LLM=true` to fail fast instead of silently falling back to mock.
-- Set `VDP_ENABLE_CREWAI=true` to enable CrewAI handoff planning.
-- If dependencies or provider keys are unavailable, the system falls back to deterministic offline behavior.
-
-## Run Tests
-
-```bash
-pytest -q
-```
-
-## Notes
-
-- Artifacts are intentionally template-driven to simulate enterprise SDLC governance.
-- Vector indexing uses ChromaDB when installed and functioning; otherwise a local searchable index is used to keep the workflow operational.
-<<<<<<< HEAD
-=======
+* Upload requirement documents
+* Run the SDLC pipeline
+* Monitor agent progress
+* View generated artifacts
+* Interact with the Product Manager chatbot
 
 ---
->>>>>>> ba1102ad2ca23b2b4e3645c43282f3c754680352
+
+# CLI Usage
+
+You can also run the pipeline using the command line:
+
+```bash
+python run_pipeline.py \
+--rfi-file requirements.pdf \
+--project-name my-project
+```
+
+---
+
+# Output Artifacts
+
+Each execution generates structured artifacts stored in the **artifacts folder**.
+
+```
+artifacts/
+  run_id/
+    analysis/
+    ui_design/
+    design/
+    development/
+    testing/
+    reports/
+```
+
+Artifacts include:
+
+* User Stories
+* UI Mockups
+* Design Documents
+* Source Code
+* Test Suites
+* Execution Reports
+
+---
+
+# Future Enhancements
+
+* GitHub repository auto-generation
+* CI/CD pipeline integration
+* Multi-language code generation
+* Deployment automation
+* Figma UI design generation
+* Advanced project analytics dashboard
+
+---
+
+# Author
+Koena Banerjee
+Shreyasi Datta
+Rohit Roy
+Rikta Pati
+BTech Computer Science Engineering
+
+---
+
+# License
+
+This project is developed for **academic and research purposes**.
+
+
